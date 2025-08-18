@@ -3,474 +3,797 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
-    <title>RICHKING-Portfolio</title>
+    <title>E.O. Richking – Personal Branding Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="hero_container">
-      <div class="header_body" id="header">
-        <div class="header_logo_body">
-          <a href="#home" class="header_nav__link">E.O.RICHKING</a>
-        </div>
-        <div class="header_nav_container">
-          <!-- <a href="#home">HOME</a> -->
-          <a class="header_nav__link" href="#about">About</a>
-          <a class="header_nav__link" href="#proof">Testimonials</a>
-          <a class="header_nav__link" href="#connect">Contact</a>
-          <a href="" download="">
-            <button id="header_nav_btn">Download Resume</button>
-          </a>
-          <a href="#connect">
-            <button id="header_nav_btn">Book a Call</button>
-          </a>
-        </div>
-        <div class="menu_container" id="open">
-          <i class="fa-solid fa-bars menu_icon"></i>
-        </div>
-        <div class="menu_container" id="close" style="display: none">
-          <i class="fa-solid fa-xmark menu_icon"></i>
-        </div>
-        <div class="menu" id="menu">
-          <!-- <a id="home_link" href="#home">HOME</a> -->
-          <a class="close_link" href="#about">About</a>
-          <a class="close_link" href="#core-competencies">Core Competencies</a>
-          <a class="close_link" href="#projects">Projects</a>
-          <!-- <a class="close_link" href="#work">Work</a> -->
-          <a class="close_link" href="#contact">Contact</a>
+  <body class="min-h-screen bg-[#F6F4EF] text-gray-900">
+    <!-- NAV -->
+    <header
+      class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-black/5"
+    >
+      <div
+        class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between"
+      >
+        <a
+          href="#hero"
+          class="text-[13px] tracking-[0.25em] uppercase font-semibold text-gray-900"
+        >
+          <span
+            class="inline-block mr-2 h-3 w-3 rounded-full"
+            style="background: #c5a350"
+          ></span>
+          E.O. RICHKING
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#uvp" class="hover:text-gray-900 text-gray-600">Value</a>
+          <a href="#services" class="hover:text-gray-900 text-gray-600"
+            >Services</a
+          >
+          <a href="#work" class="hover:text-gray-900 text-gray-600"
+            >Case Studies</a
+          >
+          <a href="#about" class="hover:text-gray-900 text-gray-600">About</a>
+          <a href="#testimonials" class="hover:text-gray-900 text-gray-600"
+            >Testimonials</a
+          >
+          <a href="#contact" class="hover:text-gray-900 text-gray-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-2">
           <a
-            class="close_link"
-            href="./assets/TobiAkinkunmiResume.pdf"
-            download="TobiAkinkunmiResume.pdf"
-            >Download Resume</a
+            href="/EyitayoObanewoRichkingResume.pdf"
+            class="hidden md:inline-flex text-sm font-medium px-3 py-2 rounded-xl border border-gray-200 hover:bg-gray-50"
+          >
+            Download Résumé
+          </a>
+          <a
+            href="https://calendly.com/"
+            class="inline-flex text-sm font-semibold px-3.5 py-2.5 rounded-xl"
+            style="background: #0a1a2f; color: #f6f4ef"
+          >
+            Book a Call
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="relative">
+      <div class="mx-auto max-w-6xl px-4 pt-16 pb-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p class="text-xs tracking-[0.25em] uppercase text-gray-500">
+              Protocol • Presence • Performance
+            </p>
+            <h1 class="mt-3 text-4xl md:text-5xl font-semibold leading-[1.1]">
+              World-Class Protocol & Etiquette for Leaders and Institutions
+            </h1>
+            <p class="mt-4 text-gray-600 max-w-lg">
+              I help leaders, teams, and institutions show up with diplomatic
+              polish and operational discipline—so every room feels ready, every
+              event runs flawlessly, and every interaction builds trust.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://calendly.com/"
+                class="px-5 py-3 rounded-2xl font-semibold"
+                style="background: #0a1a2f; color: #f6f4ef"
+              >
+                Book a Strategy Call
+              </a>
+              <a
+                href="#intro-video"
+                class="px-5 py-3 rounded-2xl font-semibold border border-gray-300 hover:bg-white"
+              >
+                Watch 60-sec Intro
+              </a>
+              <a
+                href="/EyitayoObanewoRichkingResume.pdf"
+                class="px-5 py-3 rounded-2xl font-semibold border border-gray-300 hover:bg-white"
+              >
+                Download Résumé (PDF)
+              </a>
+            </div>
+            <div class="mt-6 flex items-center gap-4 text-sm">
+              <a
+                href="https://www.linkedin.com/in/e-o-richking-3972a2360"
+                class="text-gray-600 hover:text-gray-900"
+                >LinkedIn</a
+              >
+              <span class="text-gray-300">•</span>
+              <a
+                href="https://www.instagram.com/eorichking"
+                class="text-gray-600 hover:text-gray-900"
+                >Instagram</a
+              >
+              <span class="text-gray-300">•</span>
+              <a
+                href="https://vowsope.com/"
+                class="text-gray-600 hover:text-gray-900"
+                >Vonne-Wellington School</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-[16/10] rounded-3xl overflow-hidden ring-1 ring-black/10 shadow-sm bg-white"
+            >
+              <iframe
+                id="intro-video"
+                title="Intro Video"
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&controls=1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- <div class="mt-3 text-xs text-gray-500">
+              Intro video placeholder — swap with final link.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (✂️ Continue UVP, SERVICES, CASE STUDIES, ABOUT, TESTIMONIALS, CONTACT, FOOTER with same Tailwind classes ✂️) -->
+
+    <section id="uvp" class="py-20">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm">
+            <div class="text-[13px] tracking-[0.25em] uppercase text-gray-500">
+              Value Pillar
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Protocol Strategy</h3>
+            <p class="mt-2 text-gray-600">
+              International protocol, VIP hosting, seating & sequence,
+              cross‑cultural etiquette.
+            </p>
+          </div>
+          <div class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm">
+            <div class="text-[13px] tracking-[0.25em] uppercase text-gray-500">
+              Value Pillar
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Leadership Presence</h3>
+            <p class="mt-2 text-gray-600">
+              Executive comportment, diplomatic communication, room command and
+              polish.
+            </p>
+          </div>
+          <div class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm">
+            <div class="text-[13px] tracking-[0.25em] uppercase text-gray-500">
+              Value Pillar
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">
+              Institutional Strengthening
+            </h3>
+            <p class="mt-2 text-gray-600">
+              NGO ops, SOPs, M&E, CSR redesign and governance workshops.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-3xl">
+          <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+            Offerings
+            <!-- {kicker} -->
+          </div>
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight"
+          >
+            <!-- {title} -->
+            Advisory, Training, and Protocol Direction
+          </h2>
+          <p class="mt-3 text-gray-600">
+            <!-- {sub} -->
+            Bespoke programs for corporate, public, and nonprofit
+            clients—localized with cultural intelligence.
+          </p>
+        </div>
+        <!-- <SectionHeading
+          kicker="Offerings"
+          title="Advisory, Training, and Protocol Direction"
+          sub="Bespoke programs for corporate, public, and nonprofit clients—localized with cultural intelligence."
+        /> -->
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">
+              International Protocol & VIP Management
+            </h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>Order of precedence, seating and sequence</li>
+              <li>Gift protocols, arrivals, dignitary flow</li>
+              <li>On‑site direction and timing control</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">Executive Presence Intensives</h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>Comportment and diplomatic communication</li>
+              <li>High‑stakes meeting etiquette</li>
+              <li>Role‑play with feedback loops</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">
+              Corporate/NGO Etiquette Programs
+            </h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>Cohort‑based workshops tailored by sector</li>
+              <li>Scenario design and simulation</li>
+              <li>Pre/post scoring and reporting</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">
+              Institutional Strengthening for NGOs
+            </h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>SOP & M&E integration, donor‑grade reporting</li>
+              <li>Board & governance workshops</li>
+              <li>CSR redesign to empowerment</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">Event Protocol Advisory</h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>Run‑of‑show, cue sheets, signage maps</li>
+              <li>Security liaison, VVIP seating/holding</li>
+              <li>Flags, titles, forms of address</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">Youth Empowerment Cohorts</h3>
+            <ul class="mt-3 list-disc pl-5 text-gray-700 space-y-1">
+              <li>Values, voice, vocation curriculum</li>
+              <li>Alumni community and mentorship</li>
+              <li>Career‑readiness toolkits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="py-20">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-3xl">
+          <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+            Evidence
+            <!-- {kicker} -->
+          </div>
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight"
+          >
+            <!-- {title} -->
+            Selected Case Studies
+          </h2>
+          <p class="mt-3 text-gray-600">
+            <!-- {sub} -->
+            Objective → Strategy → Execution → Tools → Results. Clear,
+            measurable, defensible.
+          </p>
+        </div>
+        <!-- <SectionHeading
+          kicker="Evidence"
+          title="Selected Case Studies"
+          sub="Objective → Strategy → Execution → Tools → Results. Clear, measurable, defensible."
+        /> -->
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <!-- {CASE_STUDIES.map((c, i) => ( <CaseCard key="{i}" c="{c}" /> ))} -->
+          <div
+            class="rounded-2xl p-6 bg-white shadow-sm ring-1 ring-black/5 hover:shadow-md transition"
+          >
+            <h3 class="text-lg font-semibold text-gray-900">
+              <!-- {c.title} -->
+              Executive Protocol Accelerator — Lagos & Abuja
+            </h3>
+            <dl class="mt-4 space-y-3 text-[15px]">
+              <div>
+                <dt class="font-medium text-gray-700">Objective</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.objective} -->
+                  Elevate executive presence and cross‑cultural competence for
+                  mid‑ to senior‑level leaders.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Strategy</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.strategy} -->
+                  Scenario‑based etiquette curriculum, pre/post presence
+                  scoring, live role‑play and drills.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Execution</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.execution} -->
+                  3‑day intensive: seating plans, dignitary sequence drills,
+                  dining diplomacy lab, feedback loops.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Tools Used</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.tools.join(", ")} -->
+                  Protocol playbooks", Checklists, Video feedback, LMS folders
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Results</dt>
+                <dd class="text-gray-900 font-medium">
+                  <!-- {c.results} -->
+                  +80% average improvement in executive‑presence scores on
+                  internal post‑program assessments; 95% completion; repeat
+                  corporate bookings next quarter.
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="rounded-2xl p-6 bg-white shadow-sm ring-1 ring-black/5 hover:shadow-md transition"
+          >
+            <h3 class="text-lg font-semibold text-gray-900">
+              <!-- {c.title} -->
+              CSR → Empowerment Model (Richgates)
+            </h3>
+            <dl class="mt-4 space-y-3 text-[15px]">
+              <div>
+                <dt class="font-medium text-gray-700">Objective</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.objective} -->
+                  Elevate executive presence and cross‑cultural competence for
+                  mid‑ to senior‑level leaders.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Strategy</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.strategy} -->
+                  Quarterly cohorts; scholarships + mentorship + skills track;
+                  governance templates and partner MOUs.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Execution</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.execution} -->
+                  Built SOP and M&E dashboards; cadence meetings; alumni
+                  mentorship pipes; donor‑grade reporting.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Tools Used</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.tools.join(", ")} -->
+                  SOPs, M&E scorecards, Trello/Asana, Google Workspace
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Results</dt>
+                <dd class="text-gray-900 font-medium">
+                  <!-- {c.results} -->
+                  2,500+ beneficiaries impacted; 40% lift in accountability
+                  metrics across entities; ₦35M operational waste eliminated via
+                  process fixes.
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="rounded-2xl p-6 bg-white shadow-sm ring-1 ring-black/5 hover:shadow-md transition"
+          >
+            <h3 class="text-lg font-semibold text-gray-900">
+              <!-- {c.title} -->
+              NGO Operations Reset — Three Mid‑Sized Orgs
+            </h3>
+            <dl class="mt-4 space-y-3 text-[15px]">
+              <div>
+                <dt class="font-medium text-gray-700">Objective</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.objective} -->
+                  Shorten donor reporting cycles and clarify roles to reduce
+                  rework and risk.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Strategy</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.strategy} -->
+                  Diagnose → restructure → retrain; write SOPs; embed monthly
+                  M&E cadence.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Execution</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.execution} -->
+                  RACI by function; grant‑compliance checklist; reporting
+                  templates; weekly sprint stand‑ups.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Tools Used</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.tools.join(", ")} -->
+                  SOP library, M&E indicators, Slack, Trello boards
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Results</dt>
+                <dd class="text-gray-900 font-medium">
+                  <!-- {c.results} -->
+                  On‑time donor reports; clearer accountability; measurable
+                  reduction in process delays across all three NGOs.
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="rounded-2xl p-6 bg-white shadow-sm ring-1 ring-black/5 hover:shadow-md transition"
+          >
+            <h3 class="text-lg font-semibold text-gray-900">
+              <!-- {c.title} -->
+              Government & Executive Events — Protocol Direction
+            </h3>
+            <dl class="mt-4 space-y-3 text-[15px]">
+              <div>
+                <dt class="font-medium text-gray-700">Objective</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.objective} -->
+                  Achieve dignitary‑grade standards for formal
+                  government/religious/executive events.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Strategy</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.strategy} -->
+                  Protocol playbooks (precedence, arrivals, staging, flags,
+                  titles), rehearsal walks, cue‑to‑cue showcalling.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Execution</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.execution} -->
+                  Liaison with security & ushers, VVIP seating/holding, signage
+                  maps, timing control.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Tools Used</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.tools.join(", ")} -->
+                  Run‑of‑show, Cue sheets, Seating charts, Comms plan
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Results</dt>
+                <dd class="text-gray-900 font-medium">
+                  <!-- {c.results} -->
+                  Zero‑incident events delivered on schedule with formal
+                  commendations.
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="rounded-2xl p-6 bg-white shadow-sm ring-1 ring-black/5 hover:shadow-md transition"
+          >
+            <h3 class="text-lg font-semibold text-gray-900">
+              <!-- {c.title} -->
+              Youth Empowerment Commons — Cohort Series
+            </h3>
+            <dl class="mt-4 space-y-3 text-[15px]">
+              <div>
+                <dt class="font-medium text-gray-700">Objective</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.objective} -->
+                  Equip young professionals with etiquette, confidence, and
+                  workplace readiness.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Strategy</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.strategy} -->
+                  Quarterly cohorts; values + voice + vocation; alumni mentors
+                  and showcase night.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Execution</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.execution} -->
+                  4‑week track; weekly workshops; service project; placement
+                  follow‑ups.
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Tools Used</dt>
+                <dd class="text-gray-600">
+                  <!-- {c.tools.join(", ")} -->
+                  Toolkits, Worksheets, Alumni community
+                </dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-700">Results</dt>
+                <dd class="text-gray-900 font-medium">
+                  <!-- {c.results} -->
+                  700+ participants since 2022; improved interview outcomes and
+                  internship placements.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div
+        class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-10 items-start"
+      >
+        <div class="md:col-span-2">
+          <div class="max-w-3xl">
+            <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+              About
+              <!-- {kicker} -->
+            </div>
+            <h2
+              class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight"
+            >
+              <!-- {title} -->
+              E. O. Richking
+            </h2>
+            <p class="mt-3 text-gray-600">
+              <!-- {sub} -->
+              Protocol & Etiquette Strategist • NGO Development Consultant •
+              Empowerment Executive
+            </p>
+          </div>
+          <!-- <SectionHeading
+            kicker="About"
+            title="E. O. Richking"
+            sub="Protocol & Etiquette Strategist • NGO Development Consultant • Empowerment Executive"
+          /> -->
+          <p class="mt-6 text-gray-700 leading-relaxed">
+            Executive Director at
+            <a
+              href="https://vowsope.com/"
+              class="underline decoration-dotted"
+              target="_blank"
+              >Vonne‑Wellington School of Protocol</a
+            >, where he designs and delivers programs that help professionals
+            operate with cultural intelligence and diplomatic polish. His work
+            spans board‑level governance, SOP/M&E builds for NGOs, youth
+            empowerment, and high‑stakes protocol for formal events—anchored in
+            disciplined execution and measurable outcomes.
+          </p>
+          <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <Stat label="Years of Impact" value="20+" />
+            <Stat label="Leaders Trained" value="1,000+" />
+            <Stat label="Youth Cohort Alumni" value="700+" />
+            <Stat label="NGOs Strengthened" value="3+" />
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href=""
+              target="_blank"
+              class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-medium"
+            >
+              Download Résumé
+            </a>
+            <a
+              href="https://www.linkedin.com/in/e-o-richking-3972a2360"
+              target="_blank"
+              class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-medium"
+            >
+              View LinkedIn
+            </a>
+            <a
+              href="https://www.eorichking.com"
+              target="_blank"
+              class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-medium"
+            >
+              Personal Website
+            </a>
+          </div>
+        </div>
+        <div class="md:col-span-1">
+          <div
+            class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm"
+            style="background: white"
+          >
+            <div class="text-[13px] tracking-[0.25em] uppercase text-gray-500">
+              Certs & Affiliations
+            </div>
+            <ul class="mt-3 space-y-2 text-gray-700 list-disc pl-5">
+              <li>
+                International Protocol Manager Training (Protocol School of
+                Washington)
+              </li>
+              <li>Certified Management Consultant (IMC‑N)—Fellow</li>
+              <li>
+                Association of Certified Protocol Practitioners in
+                Nigeria—Member
+              </li>
+              <li>
+                Association of Business Specialists & Entrepreneurs of
+                Nigeria—Fellow
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-20">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-3xl">
+          <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+            Proof
+            <!-- {kicker} -->
+          </div>
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight"
+          >
+            <!-- {title} -->
+            What Clients Say
+          </h2>
+        </div>
+        <!-- <SectionHeading kicker="Proof" title="What Clients Say" /> -->
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <figure
+            class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm"
+          >
+            <blockquote class="text-gray-800">
+              “The interactive sessions kept me fully invested, and I’ve already
+              elevated my professional interactions.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-gray-600">
+              — <span class="font-medium text-gray-900">Beatrice T.</span>,
+              Public Sector Professional
+            </figcaption>
+          </figure>
+          <figure
+            class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm"
+          >
+            <blockquote class="text-gray-800">
+              “Our executive team finally projects authority with warmth.
+              Meetings run tighter, decisions land faster.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-gray-600">
+              — <span class="font-medium text-gray-900">Group COO</span>,
+              Financial Services
+            </figcaption>
+          </figure>
+          <figure
+            class="rounded-2xl p-6 bg-white ring-1 ring-black/5 shadow-sm"
+          >
+            <blockquote class="text-gray-800">
+              “The protocol advisory turned a high‑stakes event into a
+              masterclass. Zero misses, right on the minute.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-gray-600">
+              — <span class="font-medium text-gray-900">Chief of Staff</span>,
+              Governor’s Office
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-3xl">
+          <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+            Connect
+            <!-- {kicker} -->
+          </div>
+          <h2
+            class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight"
+          >
+            <!-- {title} -->
+            Book a Strategy Call or Request a Protocol Audit
+          </h2>
+          <p class="mt-3 text-gray-600">
+            <!-- {sub} -->
+            Prefer WhatsApp or email? Those work too.
+          </p>
+        </div>
+        <!-- <SectionHeading
+          kicker="Connect"
+          title="Book a Strategy Call or Request a Protocol Audit"
+          sub="Prefer WhatsApp or email? Those work too."
+        /> -->
+        <div class="mt-10 grid md:grid-cols-2 gap-8">
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <div class="mt-3 flex flex-wrap gap-3">
+              <a
+                href=""
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl font-semibold"
+                style="background: navy; color: ivory"
+              >
+                Book on Calendly
+              </a>
+              <a
+                href="https://wa.me/2348128888800"
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-semibold"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="mailto:richkinginspires@gmail.com"
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-semibold"
+              >
+                Email
+              </a>
+            </div>
+            <div class="mt-6 text-sm text-gray-600">
+              Or connect via
+              <a
+                class="underline decoration-dotted"
+                href="https://www.linkedin.com/in/e-o-richking-3972a2360"
+                target="_blank"
+                >LinkedIn</a
+              >.
+            </div>
+          </div>
+          <div
+            class="rounded-2xl p-2 ring-1 ring-black/5 shadow-sm overflow-hidden"
+          >
+            <!-- {/* Replace with your scheduling embed (Calendly/HubSpot/etc.) */} -->
+            <iframe
+              title="Scheduling"
+              src="https://calendly.com/"
+              class="w-full h-[420px]"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10">
+      <div
+        class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="text-sm text-gray-600">
+          © 2025 E. O. Richking — Protocol • Presence • Performance
+        </div>
+        <div class="flex items-center gap-4 text-sm">
+          <a
+            href="https://www.linkedin.com/in/e-o-richking-3972a2360"
+            class="text-gray-600 hover:text-gray-900"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.instagram.com/eorichking"
+            class="text-gray-600 hover:text-gray-900"
+            >Instagram</a
+          >
+          <a
+            href="https://vowsope.com/"
+            class="text-gray-600 hover:text-gray-900"
+            >VOWSOPE</a
           >
         </div>
       </div>
-    </div>
-    <div class="body_item">
-      <div class="hero_item_section" id="home">
-        <div class="hero_item_text_section fade_in_left">
-          <h3>PROTOCOL . PRESENCE . PERFORMANCE</h3>
-          <h1>World-Class protocol & Etiquette For Leaders and Institutions</h1>
-          <p>
-            I help leaders, teams and institution show up with diplomatic polish
-            and operational discipline so every room feels ready, every event
-            runs flawlessly, and every interaction bullets trust.
-          </p>
-          <a class="hero_btn">Book a Strategy Call</a>
-        </div>
-        <div class="hero_image_section fade_in_right">
-          <img src="./images/hero_section_image.jpg" alt="image" />
-        </div>
-      </div>
-
-      <div class="about_section" id="about">
-        <div class="about_text_container fade_in_left">
-          <h3>About Me</h3>
-          <h1>E.O. Richking</h1>
-          <p>
-            Protocol & Etiquette Strategist • NGO Development Consultant •
-            Empowerment Executive
-          </p>
-          <br />
-          <p>
-            Executive Director at <a>Vonne-Wellington School of Protocol</a>,
-            where he designs and develops programs that help professionals
-            operate with cultural intelligence and diplomatic polish. His work
-            spans board-level governance, SOPJM&E builds for NGOs, youth
-            empowerment, and high-stakes protocol for formal events anchored in
-            disciplined execution and measurable outcomes.
-          </p>
-          <div class="about_item_achievement_container">
-            <div class="about_item_achievement_card">
-              <h3>Years of Impact</h3>
-              <h2>20+</h2>
-            </div>
-            <div class="about_item_achievement_card">
-              <h3>Leaders Trained</h3>
-              <h2>1,000+</h2>
-            </div>
-            <div class="about_item_achievement_card">
-              <h3>Youth Cohort Alumni</h3>
-              <h2>700+</h2>
-            </div>
-            <div class="about_item_achievement_card">
-              <h3>NGOs Strenthened</h3>
-              <h2>3+</h2>
-            </div>
-          </div>
-          <div class="about_cta_btn_container">
-            <a href="">Download Resume</a>
-            <a
-              href="https://www.linkedin.com/in/e-o-richking-3972a2360/"
-              target="_blank"
-              >View LinkedIn</a
-            >
-            <a href="https://www.eorichking.com" target="_blank"
-              >Personal Website</a
-            >
-          </div>
-        </div>
-        <!-- <div class="about_image fade_in_right"></div> -->
-        <div class="home_section_benefits_of_teaming_image_container">
-          <div class="home_section_benefits_of_teaming_image_container_top">
-            <img src="./images/about_image2.avif" alt="image" />
-          </div>
-          <div class="home_section_benefits_of_teaming_image_container_bottom">
-            <img src="./images/about_image2.avif" alt="image" />
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonials_body" id="proof">
-        <h3>PROOF</h3>
-        <h1>What Clients Say</h1>
-        <div class="swiper testimonial_card_container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide testimonial_card">
-              <p>
-                "The interactive sessions kept me fully invested, and i've
-                already elevated my professional interactions".
-              </p>
-              <p style="font-style: normal">
-                __ <b>Beatrice T</b>, <span>Public Sector Professional</span>
-              </p>
-            </div>
-            <div class="swiper-slide testimonial_card">
-              <p>
-                "Our executive team finally projects authority with warmth,
-                Meetings run tighter, decisions land faster".
-              </p>
-              <p style="font-style: normal">
-                __ <b>Group COD</b>, <span>Financial Services</span>
-              </p>
-            </div>
-            <div class="swiper-slide testimonial_card">
-              <p>
-                "The protocol advisory turned a high-stakes event into a
-                masterclass, Zero misses, right on the minute".
-              </p>
-              <p style="font-style: normal">
-                __ <b>Chief of Staff</b>, <span>Governor's Office</span>
-              </p>
-            </div>
-          </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- Navigation buttons -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-
-    <div class="booking_body" id="connect">
-      <div class="booking_top">
-        <h3>CONNECT</h3>
-        <h1>Book a Strategy Call or Request a Protocol Audit</h1>
-        <p>Prefer Whatsapp or email? Those work too</p>
-      </div>
-      <div class="booking_bottom">
-        <div class="booking_quick_links fade_in_left">
-          <h1>Quick Links</h1>
-          <div class="quick_links_btn">
-            <a>Book on Calendly</a>
-            <a href="https://wa.me/2348128888800" target="_blank">WhatsApp</a>
-            <a href="mailto:richkinginspires@gmail.com" target="_blank"
-              >Email</a
-            >
-          </div>
-          <p>Or connect via LinkedIn</p>
-        </div>
-        <div class="booking_calendly_form fade_in_right"></div>
-      </div>
-    </div>
-
-    <footer>
-      <p>© 2025 E. O. Richking - Protocol • Presence • Performance</p>
-      <div class="footer_link_container">
-        <a
-          href="https://www.linkedin.com/in/e-o-richking-3972a2360/"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://www.instagram.com/eorichking" target="_blank"
-          >Instagram</a
-        >
-        <a href="https://vowsope.com/" target="_blank">VOWSOPE</a>
-      </div>
     </footer>
-
-    <!-- <div class="core_competence_section" id="core-competencies">
-        <h1 class="fade_in_up">Core Competencies</h1>
-        <div class="core_competence_card_container">
-          <div class="core_competence_card fade_in_up">
-            <p>Strategic Marketing & Brand Positioning</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Audience Growth & Customer Retention</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Digital & Content Strategy</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Stakeholder & Media Relations</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Multi-Channel Campaign Execution</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Sponsorship & Partnership Management</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Data-Driven Decision Making</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Project & Team Leadership</p>
-          </div>
-          <div class="core_competence_card fade_in_up">
-            <p>Budget Optimisation and ROI Analysis</p>
-          </div>
-        </div>
-      </div> -->
-
-    <!-- <div class="featured_projects_section" id="projects">
-        <h1>Featured Projects</h1>
-        <div class="projects_card_container">
-          <div class="projects_card fade_in_up">
-            <div class="projects_card_top">
-              <img src="./images/nba_logo.jpg" alt="" />
-              <h3>NBA All-Star Influencer Campaign 2023</h3>
-            </div>
-            <ul class="project_list">
-              <li>
-                Drove 50% growth in social media following within one week
-              </li>
-              <li>Generated $2M in estimated media value</li>
-            </ul>
-            <a href="./nba.html">See more</a>
-          </div>
-          <div class="projects_card fade_in_up">
-            <div class="projects_card_top">
-              <img src="./images/lickquor_logo.jpg" alt="" />
-              <h3>Lickquor On-Demand Alcohol Platform</h3>
-            </div>
-            <ul class="project_list">
-              <li>Generated $200k+ in gross revenue in 18 months</li>
-              <li>
-                Achieved 5,000+ orders and 16% increase in conversion rate
-              </li>
-            </ul>
-            <a href="./lickquor.html">See more</a>
-          </div>
-          <div class="projects_card fade_in_up">
-            <div class="projects_card_top">
-              <img src="./images/umg_logo.jpg" alt="" />
-              <h3>Universal Music Artist Rollouts</h3>
-            </div>
-            <ul class="project_list">
-              <li>
-                20M+ streams for Tekno's album; 5M+ streams for Peaches Remix
-              </li>
-              <li>160k+ ad clicks and global artist visibility</li>
-            </ul>
-          </div>
-          <div class="projects_card fade_in_up">
-            <div class="projects_card_top">
-              <img src="./images/gtbank_logo.jpg" alt="" />
-              <h3>GTBank Fashion Weekend 2019</h3>
-            </div>
-            <ul class="project_list">
-              <li>8M+ impressions and 500k+ engagements via social media</li>
-              <li>15% YoY increase in event attendance</li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
-    <!-- <div class="image_carousel_body">
-        <div class="swiper project_image_carousel_section">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_one.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Shoot For GTFashion Show 2019</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_two.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Basketball Without Borders 2023</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_three.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#NBA x Hennessy Pop-up 2023</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_four.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Universal Music Nigeria</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_five.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Global Citizen DJZ West Africa Promo Tour</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_six.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#PrinceOfZamunda</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_seven.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Major League DJZ West Africa Promo Tour</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_eight.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Global Citizen DJZ West Africa Promo Tour</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_nine.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#NBA All Star Weekend 2024</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_ten.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#BAL In Lagos</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_eleven.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#NBA x Hennessy Pop-up 2023</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_twelve.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#GTBANK Fashion Weekend</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_13.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#AFD</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_14.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#NBA Meets Art</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_15.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#NBA Meets Art</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_16.png" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Peaches Remix</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/carousel_image_17.jpg" alt="" />
-              <div class="image_carousel_tag_container">
-                <p>#Universal Music Nigeria</p>
-              </div>
-            </div>
-          </div>
-
-           Pagination -->
-    <!-- <div class="swiper-pagination"></div>
-        </div> -->
-    <!-- Navigation buttons -->
-    <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>  -->
-
-    <!-- <div class="contact_media_container" id="contact">
-      <h3 class="fade_in_up">Let's Connect</h3>
-      <h6 class="fade_in_up">
-        Open to global marketing leadership roles. Reach out if you're looking
-        for bold strategies and measurable growth.
-      </h6>
-      <div class="media_container fade_in_up">
-        <a href="mailto:toakinkunmi@gmail.com">
-          <i class="fa-regular fa-envelope"></i>
-          <p>toakinkunmi@gmail.com</p>
-        </a>
-        <a>
-          <i class="fa-solid fa-phone"></i>
-          <p>+234-818-448-4565</p>
-        </a>
-      </div>
-      <h6 class="fade_in_up">You may also find me on these platforms!</h6>
-      <div class="contact_media_social_link fade_in_up">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/tobiakinkunmi" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-    </div> -->
-
-    <script src="index.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Swiper Initialization -->
-    <script>
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        grabCursor: true,
-        spaceBetween: 30,
-        breakpoints: {
-          0: { slidesPerView: 1 }, // mobile
-          768: { slidesPerView: 2 }, // tablet
-          1024: { slidesPerView: 3 }, // desktop
-        },
-      });
-    </script>
   </body>
 </html>
